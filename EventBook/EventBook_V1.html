@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Booking Form</title>
+    <link rel="stylesheet" type="text/css" href="EventBook_v1.css">
+</head>
+<body>
+    <h1>Event Booking Form</h1>
+    <form action="submit_booking.php" method="post">
+        <!-- Event Selection -->
+        <label for="event">Event:</label>
+        <select id="event" name="event" required>
+            <option value="">Select Event</option>
+            <option value="event1">Event 1</option>
+            <option value="event2">Event 2</option>
+            <!-- Add more options here -->
+        </select>
+        
+        <!-- User Information -->
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <!-- Booking Details -->
+        <label for="attendees">Number of Attendees:</label>
+        <input type="number" id="attendees" name="attendees" min="1" required>
+        <label for="special_req">Special Requirements:</label>
+        <textarea id="special_req" name="special_req"></textarea>
+        
+        <!-- Date and Time Selection -->
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+        <!-- Time slots can be implemented based on your backend logic -->
+        
+        <!-- Ticket Information -->
+        <!-- Implement based on your ticket types and quantities -->
+        
+        <!-- Payment Details -->
+        <!-- Implement based on your payment methods and information -->
+        
+        <!-- Additional Information -->
+        <label for="notes">Notes or Comments:</label>
+        <textarea id="notes" name="notes"></textarea>
+        
+        <!-- Terms and Conditions -->
+        <input type="checkbox" id="agree" name="agree" required>
+        <label for="agree">I agree to the terms and conditions</label>
+        <!-- Link to full terms and conditions -->
+        
+        <!-- Captcha or Security Check -->
+        <!-- Implement captcha or security check if needed -->
+        
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+        <!-- Clear/Reset Button (optional) -->
+        <!-- <button type="reset">Clear</button> -->
+    </form>
+</body>
+</html>
